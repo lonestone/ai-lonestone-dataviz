@@ -6,7 +6,16 @@
     },
     {
       "type": "number",
-      "name": "number A"
+      "name": "number A5"
+    },
+    {
+      "type": "schema",
+      "schema": [
+        {
+          "type": "number",
+          "name": "number A sub"
+        }
+      ]
     }
   ]
 }
