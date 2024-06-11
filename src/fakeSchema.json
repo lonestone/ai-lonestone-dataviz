@@ -1,12 +1,76 @@
 {
   "columns": [
     {
-      "type": "raw",
-      "name": "main"
+      "type": "schema",
+      "name": "Input",
+      "minWidth": 400,
+      "schema": [
+        {
+          "type": "markdown",
+          "name": "Output",
+          "alwaysVisible": true
+        },
+        {
+          "type": "array",
+          "name": "Steps",
+          "collapsible": true,
+          "collapseNumber": 1,
+          "schema": {
+            "type": "json",
+            "levelOpen": 1,
+            "name": "Step"
+          }
+        },
+        {
+          "type": "number",
+          "name": "input tokens"
+        },
+        {
+          "type": "number",
+          "name": "output tokens"
+        },
+        {
+          "type": "number",
+          "name": "embeddings tokens"
+        }
+      ]
+    },
+    {
+      "type": "json",
+      "name": "Explaination context relevance",
+      "levelOpen": 0
+    },
+    {
+      "type": "json",
+      "name": "Explaination factual accuracy"
+    },
+    {
+      "type": "json",
+      "name": "Explaination response completeness"
+    },
+    {
+      "type": "json",
+      "name": "Explaination response relevance"
     },
     {
       "type": "number",
-      "name": "number A"
+      "name": "Score context relevance",
+      "alwaysVisible": true
+    },
+    {
+      "type": "number",
+      "name": "Score factual accuracy",
+      "alwaysVisible": true
+    },
+    {
+      "type": "number",
+      "name": "Score response completeness",
+      "alwaysVisible": true
+    },
+    {
+      "type": "number",
+      "name": "Score response relevance",
+      "alwaysVisible": true
     }
   ]
 }

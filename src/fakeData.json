@@ -1,14 +1,834 @@
-{
-  "columns": [
-    {
-      "type": "raw",
-      "name": "Name",
-      "data": "Some text"
-    },
-    {
-      "type": "json",
-      "name": "Some other name",
-      "data": "{ \"properties\" }"
-    }
-  ]
-}
+[
+  {
+    "name": "What is the stock of all ELB models?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "# Un titre\nThe stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 1.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 1.00
+      },
+      {
+        "data": 3.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  },
+  {
+    "name": "Another random question that I don't understand?",
+    "columns": [
+      {
+        "data": [
+          {
+            "data": "The stock information for all ELB models is as follows:\n1. **ELB2.5-1250-P**: -9 units\n2. **ELB6-900-P**: -1 unit\n3. **ELB8-670-P**: -33 units\n4. **ELB12-600-P**: 175 units\n5. **ELB6-670-P**: -18 units"
+          },
+          {
+            "data": [
+              {
+                "data": "{\"type\": \"<ReasoningStepType.OBSERVATION: 'observation'>\", \"observation\": \"What is the stock of all ELB models\", \"return_direct\": false}"
+              },
+              {
+                "data": "{\"type\": \"<ReasoningStepType.ACTION: 'action'>\", \"action\": \"product_search\", \"action_input\": {\"input\": {\"query\": \"ELB\", \"type\": \"model\", \"lang\": \"en\", \"limit\": 100}}, \"thought\": \"I need to find the stock information for all ELB models. To do this, I will first search for all ELB models and then check their stock information.\"}"
+              },
+              {
+                "data": "{ \"propertie\": \"value3\" }"
+              },
+              {
+                "data": "{ \"propertie\": { \"propertie\": { \"propertie\": \"value4\" } } }"
+              },
+              {
+                "data": "{ \"propertie\": \"value5\" }"
+              }
+            ]
+          },
+          {
+            "data": 1
+          },
+          {
+            "data": 2
+          },
+          {
+            "data": 3
+          }
+        ]
+      },
+      {
+        "data": "{ \"Reasoning\": \"The given context provides detailed stock information for various ELB models, including ELB2.5-1250-P, ELB6-900-P, ELB8-670-P, ELB12-600-P, and ELB6-670-P. This information directly answers the query about the stock of all ELB models. Therefore, the context contains enough information to answer the query completely.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[ { \"Fact\": \"1. The stock of ELB2.5-1250-P is -9 units.\", \"Reasoning\": \"The context provides a detailed observation from a tool search that confirms the stock of ELB2.5-1250-P is -9 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"2. The stock of ELB6-900-P is -1 unit.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB6-900-P is -1 unit.\", \"Judgement\": \"yes\" }, { \"Fact\": \"3. The stock of ELB8-670-P is -33 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB8-670-P is -33 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"4. The stock of ELB12-600-P is 175 units.\", \"Reasoning\": \"The context includes an observation from a tool search that confirms the stock of ELB12-600-P is 175 units.\", \"Judgement\": \"yes\" }, { \"Fact\": \"5. The stock of ELB6-670-P is -18 units.\", \"Reasoning\": \"The context provides an observation from a tool search that confirms the stock of ELB6-670-P is -18 units.\", \"Judgement\": \"yes\" } ]"
+      },
+      {
+        "data": "{ \"Reasoning\": \"The response provides specific stock information for various ELB models, including both positive and negative stock levels. It lists the stock quantities for five different ELB models, which directly addresses the question about the stock of all ELB models.\", \"Choice\": \"A\" }"
+      },
+      {
+        "data": "[{ \"response_precision\": 1.00, \"Reasoning\": \"The response directly answers the question by providing the stock information for all ELB models. It lists each model and its corresponding stock level without including any additional irrelevant information.\", \"Choice\": \"A\" }, { \"response_recall\": 1.00, \"Reasoning\": \"The given response provides specific stock information for various ELB models, including both positive and negative stock values. This directly addresses the question about the stock of all ELB models by listing the stock quantities for each model mentioned.\", \"Choice\": \"A\" }]"
+      },
+      {
+        "data": 7.00
+      },
+      {
+        "data": 3.00
+      },
+      {
+        "data": 2.00
+      },
+      {
+        "data": 8.00
+      }
+    ]
+  }
+]
