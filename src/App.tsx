@@ -29,7 +29,7 @@ const columnNumberSchema = columnSchemaBase.extend({
 
 const columnSchemaSchema = columnSchemaBase.extend({
   type: z.literal("schema"),
-  schema: z.array(z.lazy(getColumnSchema)),
+  columns: z.array(z.lazy(getColumnSchema)),
 });
 
 const columnSchema = z.discriminatedUnion("type", [
@@ -41,18 +41,21 @@ const columnSchema = z.discriminatedUnion("type", [
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function getColumnSchema(): ZodDiscriminatedUnion<"type", any> {
-  return columnSchema
+  return columnSchema;
 }
 
 const evaluationSchema = z.object({
   columns: z.array(columnSchema),
 });
-type Evaluation = z.infer<typeof evaluationSchema>
+type Evaluation = z.infer<typeof evaluationSchema>;
 
 function App() {
-  const data = evaluationSchema.safeParse(fakeSchema);
-  if (!data.success) console.debug(data.error);
-  else console.debug("dynamicShema:", data.data)
+  try {
+    const data = evaluationSchema.parse(fakeSchema);
+    console.debug("data:", data);
+  } catch (err) {
+    console.error(err instanceof Error ? err.message : err);
+  }
 
   return (
     <Button className="px-[100px]" variant="outline">

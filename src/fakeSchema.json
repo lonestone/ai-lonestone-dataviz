@@ -10,7 +10,8 @@
     },
     {
       "type": "schema",
-      "schema": [
+      "name": "sub schema",
+      "columns": [
         {
           "type": "number",
           "name": "number A sub"
