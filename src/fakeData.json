@@ -1,0 +1,14 @@
+{
+  "columns": [
+    {
+      "type": "raw",
+      "name": "Name",
+      "data": "Some text"
+    },
+    {
+      "type": "json",
+      "name": "Some other name",
+      "data": "{ \"properties\" }"
+    }
+  ]
+}

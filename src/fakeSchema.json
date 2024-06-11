@@ -1,0 +1,12 @@
+{
+  "columns": [
+    {
+      "type": "raw",
+      "name": "main"
+    },
+    {
+      "type": "number",
+      "name": "number A"
+    }
+  ]
+}
