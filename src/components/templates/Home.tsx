@@ -1,14 +1,12 @@
 import { Layout } from "@/components/templates/Layout";
-import { Data } from "@/types/data.type";
-import JSONDATA from "../../fakeData.json";
-import JSONSCHEMA from "../../fakeSchema.json";
-import { Schema } from "@/types/schema.type";
 import DataTable from "@/components/organisms/DataTable";
+import { useJson } from "@/providers/json.provider";
 
 export const Home = () => {
+  const { schema, data } = useJson();
   return (
     <Layout>
-      <DataTable schema={JSONSCHEMA as Schema} data={JSONDATA as Data} />
+      <DataTable schema={schema} data={data} />
     </Layout>
   );
 };

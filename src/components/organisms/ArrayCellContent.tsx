@@ -43,7 +43,7 @@ const ArrayCellContent = ({
             </div>
           );
         })}
-      <CollapsibleContent>
+      <CollapsibleContent className="CollapsibleContent">
         <div className="mt-4">
           {collapsible &&
             collapseNumber > 0 &&
