@@ -22,8 +22,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./src/*"
-      ]
+        "./src/*",
+      ],
+      "dataviz": [ "./src/components/index.ts" ]
     }
   },
   "include": ["src"],
