@@ -26,7 +26,7 @@ import DataCell from "@/components/organisms/DataCell";
 import { ArrowDownWideNarrow, ArrowUpNarrowWide } from "lucide-react";
 import { numberCellSortFn } from "@/utils/numberCellSortFn";
 
-interface DataTableProps {
+export interface DataTableProps {
   schema: Schema;
   data: Data;
 }
