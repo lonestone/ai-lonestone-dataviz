@@ -1,6 +1,6 @@
 import { DataType } from "@/types/data.type";
 import { Column } from "@/types/schema.type";
-import CollapseButton from "@/components/atoms/CollapseButton";
+import CollapseButton from "../../components/atoms/CollapseButton";
 import { getCellContentFromType } from "@/utils/getCellContentFromType";
 
 interface FirstColumnCellProps {

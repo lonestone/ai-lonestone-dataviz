@@ -11,6 +11,7 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "noEmit": true,
     "jsx": "react-jsx",
 
     /* Linting */
@@ -18,7 +19,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "emitDeclarationOnly": true,
     "baseUrl": ".",
     "declaration": true,
     "outDir": "./dist",
@@ -26,9 +26,6 @@
       "@/*": [
         "./src/*",
       ],
-      "dataviz": [ "./src/components/index.d.ts" ]
     }
-  },
-  "include": ["src/components/index.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  }
 }

@@ -1,7 +1,7 @@
-import ArrayCellContent from "@/components/organisms/ArrayCellContent";
-import JsonCellContent from "@/components/organisms/JsonCellContent";
-import MarkdownCellContent from "@/components/organisms/MarkdownCellContent";
-import SchemaCellContent from "@/components/organisms/SchemaCellContent";
+import ArrayCellContent from "dataviz-datatable/components/organisms/ArrayCellContent.tsx";
+import JsonCellContent from "dataviz-datatable/components/organisms/JsonCellContent.tsx";
+import MarkdownCellContent from "dataviz-datatable/components/organisms/MarkdownCellContent.tsx";
+import SchemaCellContent from "dataviz-datatable/components/organisms/SchemaCellContent.tsx";
 import { DataType } from "@/types/data.type";
 import { Column, ColumnJson } from "@/types/schema.type";
 

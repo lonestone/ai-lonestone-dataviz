@@ -20,9 +20,9 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import { useMemo, useState } from "react";
-import TableNumberFooter from "@/components/organisms/TableNumberFooter";
-import FirstColumnCell from "@/components/organisms/FirstColumnCell";
-import DataCell from "@/components/organisms/DataCell";
+import TableNumberFooter from "../../components/organisms/TableNumberFooter";
+import FirstColumnCell from "../../components/organisms/FirstColumnCell";
+import DataCell from "../../components/organisms/DataCell";
 import { ArrowDownWideNarrow, ArrowUpNarrowWide } from "lucide-react";
 import { numberCellSortFn } from "@/utils/numberCellSortFn";
 
@@ -80,7 +80,7 @@ const DataTable = ({ schema, data }: DataTableProps) => {
   const [sorting, setSorting] = useState<SortingState>([]);
   const columns = useMemo(() => createColumns(schema, data), [schema, data]);
   const table = useReactTable({
-    // @ts-expect-error - Data will be validated by the schema
+    // @ts-ignore - Data will be validated by the schema
     columns,
     data: data,
     getCoreRowModel: getCoreRowModel(),
