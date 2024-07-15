@@ -9,6 +9,12 @@ import {
 } from "@/components/ui/table";
 import { Schema } from "@/types/schema.type";
 import { Data, DataEntry } from "@/types/data.type";
+import { useMemo, useState } from "react";
+import TableNumberFooter from "../../components/organisms/TableNumberFooter";
+import FirstColumnCell from "../../components/organisms/FirstColumnCell";
+import DataCell from "../../components/organisms/DataCell";
+import { ArrowDownWideNarrow, ArrowUpNarrowWide } from "lucide-react";
+import { numberCellSortFn } from "@/utils/numberCellSortFn";
 import {
   createColumnHelper,
   ExpandedState,
@@ -19,12 +25,6 @@ import {
   SortingState,
   useReactTable,
 } from "@tanstack/react-table";
-import { useMemo, useState } from "react";
-import TableNumberFooter from "../../components/organisms/TableNumberFooter";
-import FirstColumnCell from "../../components/organisms/FirstColumnCell";
-import DataCell from "../../components/organisms/DataCell";
-import { ArrowDownWideNarrow, ArrowUpNarrowWide } from "lucide-react";
-import { numberCellSortFn } from "@/utils/numberCellSortFn";
 
 export interface DataTableProps {
   schema: Schema;
