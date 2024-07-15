@@ -162,9 +162,11 @@ const DataTable = ({ schema, data }: DataTableProps) => {
               >
                 {row.getVisibleCells().map((cell) => (
                   <TableCell
-                    style={{ width: cell.column.getSize() }}
+                    style={{
+                      width: cell.column.getSize(),
+                      verticalAlign: "baseline",
+                    }}
                     key={cell.id}
-                    className="align-baseline"
                   >
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </TableCell>
