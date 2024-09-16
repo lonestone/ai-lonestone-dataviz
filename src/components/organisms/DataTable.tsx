@@ -23,8 +23,8 @@ import { useMemo, useState } from "react";
 import TableNumberFooter from "@/components/organisms/TableNumberFooter";
 import FirstColumnCell from "@/components/organisms/FirstColumnCell";
 import DataCell from "@/components/organisms/DataCell";
-import { ArrowDownWideNarrow, ArrowUpNarrowWide } from "lucide-react";
 import { numberCellSortFn } from "@/utils/numberCellSortFn";
+import { SortingIcon } from "@/components/atoms/SortingIcon";
 
 export interface DataTableProps {
   schema: Schema;
@@ -130,23 +130,16 @@ const DataTable = ({ schema, data }: DataTableProps) => {
                           header.column.columnDef.header,
                           header.getContext()
                         )}
-                    {{
-                      asc: (
-                        <ArrowDownWideNarrow className="transform rotate-180" />
-                      ),
-                      desc: (
-                        <ArrowUpNarrowWide className="transform rotate-180" />
-                      ),
-                    }[header.column.getIsSorted() as string] ?? null}
-                    {header.column.getCanResize() && (
-                      <div
-                        onMouseDown={header.getResizeHandler()}
-                        onTouchStart={header.getResizeHandler()}
-                        className={`bg-primary resizer ${
-                          header.column.getIsResizing() ? "isResizing" : ""
-                        }`}
-                      ></div>
-                    )}
+                    <SortingIcon
+                      sorting={header.column.getIsSorted() as string}
+                    />
+                    <div
+                      onMouseDown={header.getResizeHandler()}
+                      onTouchStart={header.getResizeHandler()}
+                      className={`bg-primary resizer ${
+                        header.column.getIsResizing() ? "isResizing" : ""
+                      }`}
+                    ></div>
                   </div>
                 </TableHead>
               ))}
